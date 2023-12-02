@@ -1,0 +1,461 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica , sans-serif; /*of een lettertype naar keuze...*/
+}
+/*Smooth trans on NAV button press*/
+    html{
+        scroll-behavior:smooth;
+    }
+/*HEADER*/
+    header > div  {
+       height:35vh;
+       overflow: hidden;
+       position:relative;
+    }
+/*Header Image*/
+    header > div > img{
+        width:100%;
+        height:auto;
+        position:absolute;
+        transform:translateY(-50%);
+        z-index:1;
+        min-width:60rem;
+    }
+/*Telefoon & e-mail*/
+    header > ul {
+        background:hsl(0, 0%, 14%);
+        list-style-type:none;
+        padding:1.25rem 1rem;
+        overflow:auto;
+    }
+    header > ul > li:nth-child(1){
+        float:left;
+    }
+    header > ul > li:nth-child(2){
+        float:right;
+    }
+    header > ul > li > a{
+        color:hsl(354, 71%, 47%);
+        font-size:0.75rem;
+        text-decoration:none;
+    }
+/*Header Text*/
+    header > div > h1{
+        color:hsl(354, 71%, 47%);
+        position:absolute;
+        font-size:5rem;
+        top:40%;
+        left:35%;
+        z-index:2;
+        white-space:nowrap;
+        text-transform:uppercase;
+    }
+/*NAV */
+nav{
+    position: sticky;
+    top:0;
+    z-index:3;
+    box-shadow:0rem 0.4rem 0.5rem hsl(0, 0%, 35%);
+}
+nav > ul {
+    list-style-type:none;
+    background:hsl(0, 0%, 35%);
+    overflow:hidden;
+}
+nav > ul > li {
+    float:left;
+    text-align:center;
+    cursor:pointer;
+}
+nav > ul > li:nth-child(3) {
+    float:right;
+    text-align:right;
+}
+
+/*Link elements in NAV*/
+    nav > ul > li >a{
+        display:inline-block;
+        padding:1rem 1.5rem;
+        min-width:10rem;
+        color:hsl(354, 71%, 47%);
+        text-decoration:none;
+    }
+/*Main (winkel)*/
+main > section{
+    padding:1rem;
+    margin:2rem;
+    background:white;
+    overflow:hidden;
+}
+main > section > h2{
+    text-align:center;
+    margin:1rem;
+    color:hsl(354, 71%, 47%);
+    text-transform:uppercase;
+}
+main > section article{
+    float:left;
+    margin:2rem;
+    width: calc(33.333% - 4rem);
+    min-width:20rem;
+    max-width:50rem;
+    border-radius:0.5rem;
+    overflow:hidden;
+    border:3px solid hsl(0, 0%, 87%);
+    cursor:pointer;
+    transition:0.2s;
+}
+main > section article:hover{
+    box-shadow:0.3rem 0.6rem 0.5rem hsl(0, 0%, 35%);
+}
+article > div{
+    height:10rem;
+    overflow:hidden;
+    position:relative;
+}
+article > div > img{
+    width:100%; /*aangepaste waarde voor beter resultaat*/
+    height:auto;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    transition:width 0.3s;
+}
+article:hover > div > img{
+    width:110%;
+}
+article > h3{
+    padding:1.25rem;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    background:hsl(354, 71%, 47%);
+}
+article > p{
+    padding:1rem;
+    color:hsl( 0, 0%, 35%);
+    text-align:center;
+}
+article > button{
+    width:25rem;
+    height:2rem;
+    border:none;
+    margin:1rem auto;
+    display:block;
+    background:hsl(0, 0%, 87%);
+    transition:2s;
+}
+article > button:hover{
+    color:white;
+    background:hsl(354, 71%, 47%);
+    border-radius:2rem;
+}
+/*footer*/
+footer{
+    position:fixed; 
+    bottom:0;
+    text-align:center;
+    font-size:0.75rem;
+    width:100%;
+    background:hsl(0, 0%, 14%);
+    color:hsl(354, 71%, 47%);
+    padding:0.75rem;
+    box-shadow:0rem -0.4rem 0.5rem hsl(0, 0%, 35%);
+}
+
+/*FORM*/
+#contact{
+    background:url(../img/custom_images/Back_Form_IMG.jpg);
+    background-size:cover;
+    background-position:center;
+    border-radius:25px;
+    overflow:hidden;
+    margin:4rem;
+}
+#contact > h2{
+    font-size:2.5rem;
+    color:white;
+}
+form{
+    margin:5rem 0rem 4rem 0rem;
+}
+input {
+    width:25rem;
+    height:3rem;
+    display:block;
+    margin:1rem auto;
+    padding:0.5rem;
+    border:none;
+    transition:0.35s;
+} 
+
+textarea{
+    width:25rem;
+    height:10rem;
+    display:block;
+    margin:1rem auto;
+    padding:0.5rem;
+    resize:none;
+    border:none;
+    transition:0.35s;
+}
+textarea:focus, input:focus{
+    outline: none;
+    border-radius:1rem;
+}
+form > button{
+    width:25rem;
+    height:3rem;
+    margin:1rem auto;
+    display:block;
+    border:none;
+    transition:0.35s;
+}
+form > button:hover{
+    background:hsl(354, 71%, 47%);
+    color:white;
+    border-radius:2rem;
+}
+/*EXTRA Pop Up */
+.modal-bg{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    top:0;
+    left:0;
+    /*background-color:rgba(0,0,0,0.5);*/
+    background:rgba(36, 36, 36, 0.5);/* Binnen het kleuren schema is dit "darkest grey" */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    visibility: hidden;
+    opacity:0;
+    transition:1s ease-out;
+}
+.bg-active{
+    visibility: visible;
+    opacity:1;
+}
+.modal{
+    color:hsl(354, 71%, 47%);
+    position:relative;
+    font-family:"futura",sans-serif;
+    background:white;
+    width:30%;
+    height:30%;
+    padding:5%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-direction:column;
+    border-radius:5px;
+    text-align:center;
+}
+.modal-close{
+    position:absolute;
+    top:2rem;
+    right:2rem;
+    font-weight:bold;
+    cursor:pointer;
+}
+.modal-close-continue{
+    position:absolute;
+    bottom:2rem;
+    left:auto;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.35s;
+}
+/*Help Button*/
+.help-btn{
+    position:sticky;
+    bottom:10rem;
+    transform: rotate(-90deg);
+    color:white;
+    background:hsl(354, 71%, 47%);
+    width:10rem;
+    height:2.5rem;
+    padding:0.5rem;
+    text-align:center;
+    margin:-50px;
+    border-radius:0.35rem;
+    cursor:pointer;
+    z-index:5;
+}
+
+/*Media q. Voor verschillende type devices*/
+@media (max-width:480px){
+/*Header*/
+    header > div  {
+           height:35vh;
+           overflow: hidden;
+           position:relative;
+        }
+        header > div > img{
+            transform:translateY(-20%);
+        }
+            header > div > h1{
+                color:hsl(354, 71%, 47%);
+                position:absolute;
+                font-size:3rem;
+                top:45%;
+                left:10%;
+                z-index:2;
+                white-space:nowrap;
+                text-transform:uppercase;
+            }
+/*NAV */
+    nav > ul > li {
+        float:none;
+        text-align:center;
+        cursor:pointer;
+    }
+    nav > ul > li:nth-child(3) {
+        float:none;
+        text-align:center;;
+    }
+
+/*Main Aanpassingen*/
+     main > section{
+        padding:1rem;
+        margin:2rem;
+    }
+    main > section > h2{
+        margin:0rem;
+    }
+    main > section article{
+        margin:2rem;
+        width: calc(33.333% - 4rem);
+        cursor:pointer;
+        transition:0.2s;
+    }
+    article > button{
+        width:100%;
+        height:2rem;
+    }
+/*Form*/
+    #contact{
+        background:hsl(354, 71%, 47%);
+    }
+    input {
+        width:15rem;
+        height:3rem;
+    } 
+
+    textarea{
+        width:15rem;
+        height:10rem;
+    }
+    form > button{
+        width:15rem;
+        height:3rem;
+    }
+}
+@media (max-width:768px){
+/*Header*/
+        header > div > img{
+            transform:translateY(-30%);
+        }
+            header > div > h1{
+                font-size:5rem;
+                top:45%;
+                left:7.5%;
+            }
+/*NAV */
+    nav > ul > li {
+        float:none;
+        text-align:center;
+        cursor:pointer;
+    }
+    nav > ul > li:nth-child(3) {
+        float:none;
+        text-align:center;;
+    }
+/*Main Aanpassingen*/
+     main > section{
+        padding:1rem;
+        margin:2rem;
+    }
+    main > section > h2{
+        margin:1rem;
+    }
+    main > section article{
+        margin:2rem;
+        width: calc(50% - 4rem);
+        cursor:pointer;
+        transition:0.2s;
+    }
+    article > button{
+        width:100%;
+        height:2rem;
+    }
+/*Form*/
+    #contact{
+        background:hsl(354, 71%, 47%);
+    }
+    input {
+        width:25rem;
+        height:3rem;
+    } 
+
+    textarea{
+        width:25rem;
+        height:10rem;
+    }
+    form > button{
+        width:25rem;
+        height:3rem;
+    }
+}
+@media (max-width:1200px){
+ /*Header*/
+        header > div > img{
+            transform:translateY(-30%);
+        }
+            header > div > h1{
+                font-size:6rem;
+                top:40%;
+                left:20%;
+            }
+/*Main Aanpassingen*/
+     main > section{
+        padding:1rem;
+        margin:2rem;
+    }
+    main > section > h2{
+        margin:1rem;
+    }
+    main > section article{
+        margin:2rem;
+        width: calc(33.333% - 4rem);
+        cursor:pointer;
+        transition:0.2s;
+    }
+    article > button{
+        width:100%;
+        height:2rem;
+    }
+/*Form*/
+}
+@media (min-width:1201px){
+/*Main Aanpassingen*/
+     main > section{
+        padding:1rem;
+        margin:2rem;
+    }
+    main > section > h2{
+        margin:1rem;
+        font-size:3rem;
+    }
+    main > section article{
+        margin:2rem;
+        width: calc(33.333% - 4rem);
+    }
+    article > button{
+        width:100%;
+        height:2rem;
+    }
+}

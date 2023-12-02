@@ -1,0 +1,41 @@
+{
+    "rims": [
+      {
+        "name": "Superspeed",
+        "description": "Premium alloy rims with a sleek design, perfect for enhancing your vehicle's aesthetics.",
+        "price": 299.99,
+        "img":"../img/custom_images/Velg_1.jpg"
+      },
+      {
+        "name": "Fuel",
+        "description": "Sporty rims featuring stylish spokes, providing a dynamic and aggressive look to your car.",
+        "price": 249.95,
+        "img":"../img/custom_images/Velg_2.jpg"
+      },
+      {
+        "name": "RTX",
+        "description": "High-end chrome-plated rims that add a touch of luxury and sophistication to your vehicle.",
+        "price": 399.99,
+        "img":"../img/custom_images/Velg_3.jpg"
+      },
+      {
+        "name": "American Racing",
+        "description": "Durable off-road rims designed to withstand tough terrains, perfect for adventurous journeys.",
+        "price": 329.99,
+        "img":"../img/custom_images/Velg_4.jpg"
+      },
+      {
+        "name": "Niche",
+        "description": "High-end carbonfiber-plated rims that add a touch of luxury and sophistication to your vehicle.",
+        "price": 399.99,
+        "img":"../img/custom_images/Velg_5.jpg"
+      },
+      {
+        "name": "Vossen",
+        "description": "High-end carbonfiber-plated rims that add a touch of luxury and sophistication to your vehicle.",
+        "price": 400.00,
+        "img":"../img/custom_images/Velg_6.jpg"
+      }
+    ]
+  }
+  

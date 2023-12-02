@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>De velgendief</title>
+        <link href="img/custom_images/Favico.png" type="image/png" rel="icon" sizes="16x16">
+        <link href="./styles/styles.css" type="text/css" rel="stylesheet">
+        <script src="./scripts/script.js" defer></script>
+    </head>
+    <body>
+		<header>
+            <ul>
+                <li><a href="tel:+3234320220">Bel ons 03/432 02 20</a></li>
+                <li><a href="mailto:hello@webshop.be">develgendief@webshop.be</a></li>
+            </ul>
+            <div>
+               <img src="img/custom_images/header_img.jpg">
+                <h1>De velgendief</h1>               
+            </div>
+		</header>
+        <nav>
+            <ul>
+				<li class="active"><a href="#offer">Aanbod</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#">Winkelmandje</a></li>
+            </ul>
+        </nav>
+		<main>
+		    <section id="offer">
+                <h2>Ons aanbod</h2>
+                
+			</section>
+            <!--Form-->
+			<section id="contact">
+			    <h2>Contact</h2>
+			    <form action="mailto:Insertrealemailhere" method="GET">
+                    <input class="input1" type="text" name="naam" placeholder="Naam" required>
+                    <input class="input1" type="text" name="email" placeholder="E-Mail" required>
+                    <textarea id="Vraag" name="vraag" placeholder="Waarmee kunnen wij je helpen ?" required></textarea>
+                    <button class="contact-form-btn">Verzenden!</button>
+                </form>
+			</section>
+		</main>
+    <!--#EXTRA# -->
+        <!--POP UP-->
+        <div class="modal-bg">
+            <div class="modal">
+                <h3>Succes! </h3>
+                <p>Het artikel werd met succes in de winkelwagen geplaatst</p>
+                <span class="modal-close">X</span>   
+                <span class="modal-close-continue">Verder winkelen</span>  
+            </div>
+        </div>
+        <!--Help button-->
+        <div class="help-btn">
+            <h4><a>Help?</a></h4>
+        </div>
+         <script src="js/pop_up.js"></script>
+        <footer>Copyright © 2021 | De velgendief</footer>
+    </body>
+</html>
